@@ -1,0 +1,685 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Radio Canada Big", sans-serif;
+    position: relative;
+}
+
+#sec{
+    background-color: #f4ede4;
+}
+/* -------------- navbar ---------------- */
+nav{
+    background-color: white;
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-radius: 40px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0rem;
+    left: 7rem;
+    margin-top: 0.5rem;
+    z-index: 9;
+}
+nav> #navleft{
+    /* background-color: burlywood; */
+    display: flex;
+    align-items: center;
+}
+nav> #navleft>ul{
+    display: flex;
+    gap: 1.6rem;
+}
+nav> #navleft> ul> li{
+    list-style-type: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+nav> #navleft> ul>li>i{
+    color: black;
+}
+nav> #navright{
+    /* background-color: violet; */
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+#navright > i{
+    font-size: 1.3rem;
+}
+#navright> a{
+    text-decoration: none;
+    color: black;
+    margin-left: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+#navright> #talk{
+    height: 45px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #611f69;
+    border: 2px solid #611f69;
+    background-color: white;
+    /* box-shadow: inset 0 0 0 1px #611f69; */
+    border-radius: 5px;
+    font-size: 15px;
+    margin-left: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+#navright> #get{
+    height: 45px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #611f69;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* --------------- header ---------------- */
+#header{
+    /* background-color: aquamarine; */
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-top: 7rem;
+}
+#header> h2{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+#header>h2>span{
+    color: #611f69;
+}
+#header> button{
+    height: 60px;
+    padding-left: 2.7rem;
+    padding-right: 2.7rem;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #611f69;
+    font-size: 15px;
+    cursor: pointer;
+    /* font-weight: bold; */
+}
+#header> p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#header> p> span{
+    font-weight: 100;
+}
+#header> ul{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#header> ul> li{
+    list-style-type: none;
+}
+#header> video{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: -24rem;
+}
+
+/* ----------------- tools --------------- */
+#tools{
+    background-color: #f4ede4;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+    padding-top: 25rem;
+}
+#tools> #toolsleft{
+    /* background-color: brown; */
+    width: 48%;
+}
+#tools> #toolsleft> video{
+    width: 99%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 2px;
+}
+#tools> #toolsright{
+    /* background-color: chartreuse; */
+    width: 48%;
+    padding-left: 6rem;
+    box-sizing: border-box;
+}
+#tools> #toolsright> h2{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#tools> #toolsright> p{
+    margin-bottom: 1rem !important;
+    font-weight: 100;
+    line-height: 1.4444;
+    letter-spacing: -.2px;
+    font-size: 1.125rem;
+}
+#toolsright> a, i{
+    text-decoration: none;
+    color: #1264a3;
+}
+
+/* --------------- work -------------- */
+#work{
+    background-color: #f4ede4;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+}
+#work> #workleft{
+    /* background-color: brown; */
+    width: 48%;
+}
+#work> #workright{
+    /* background-color: brown; */
+    width: 48%;
+}
+#work> #workleft> h2{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#work> #workleft> p{
+    margin-bottom: 1rem !important;
+    font-weight: 100;
+    line-height: 1.4444;
+    letter-spacing: -.2px;
+    font-size: 1.125rem;
+}
+#work> #workleft> a, i{
+    text-decoration: none;
+    color: #1264a3;
+}
+#work> #workright> video{
+    width: 99%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 2px;
+}
+
+/* -------------- team -------------- */
+#team{
+    background-color: #f4ede4;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+}
+#team> #teamleft{
+    /* background-color: brown; */
+    width: 48%;
+}
+#team> #teamleft> video{
+    width: 99%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 2px;
+}
+#team> #teamright{
+    /* background-color: chartreuse; */
+    width: 48%;
+    padding-left: 6rem;
+    box-sizing: border-box;
+}
+#team> #teamright> h2{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#team> #teamright> p{
+    margin-bottom: 1rem !important;
+    font-weight: 100;
+    line-height: 1.4444;
+    letter-spacing: -.2px;
+    font-size: 1.125rem;
+}
+#teamright> a, i{
+    text-decoration: none;
+    color: #1264a3;
+}
+
+/* ------------- slack ------------- */
+#slack{
+    /* background-color: aquamarine; */
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+#slack> h2{
+    font-size: 3.125rem;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+}
+#slack>p{
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
+#slack > #meet{
+    height: 60px;
+    padding-left: 2.7rem;
+    padding-right: 2.7rem;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #611f69;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+#slack> #sales{
+    height: 60px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #611f69;
+    border: 1px solid #611f69;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 0.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+/* ---------------- slack2-------------- */
+#slack2{
+    /* background-color: aqua; */
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+#slack2> ul> li{
+    list-style-type: none;
+}
+#slack2> #per{
+    display: flex;
+    margin-top: 1rem;
+    padding: 0; 
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 0;
+}
+#slack2> #per> li{
+    font-size: 4rem;
+    color: #611f69;
+    font-weight: 600;
+    padding: 0;
+}
+#slack2> #per> li> p{
+    margin: 0;
+}
+#slack2> #firstline{
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+    margin: 0;
+}
+#slack2> #firstline>li>p{
+    margin: 0;
+    font-size: 15px;
+}
+#slack2> #firstline>li>#p1{
+    margin-left: 4.4rem;
+}
+#slack2> #firstline>li>#p2{
+    margin-left: 1rem;
+}
+#slack2> #firstline>li>#p3{
+    margin-left: 0.4rem;
+}
+#slack2> #secline{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 14.5rem;
+    padding-left: 18rem;
+}
+#slack2> #secline>li>p{
+    margin: 0;
+    font-size: 15px;
+}
+#slack2> #secline>li>#p33{
+    padding-left: 1.3rem;
+}
+
+/* ----------------- vodafone ---------------- */
+#vodafone{
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap:3rem;
+    margin-bottom: 3.5rem;
+}
+#vodafone> #vodaleft{
+    /* background-color: red; */
+    width: 49%;
+    position: relative;
+}
+#vodafone> #vodaleft>video{
+    width: 100%;
+    border-top-right-radius: 250px;
+    border-bottom-right-radius: 250px;
+}
+#vodaleft>i{
+    position: absolute;
+    top: 11rem;
+    left: 20rem;
+    font-size: 5rem;
+}
+#vodafone> #vodaright{
+    /* background-color: violet; */
+    width: 49%;
+    /* padding-left: 2rem; */
+}
+#vodafone> #vodaright> #vr1{
+    font-style: italic;
+    font-size: 1.75rem;
+    font-weight: 100;
+    /* color: #a0a0a0; */
+}
+#vodafone> #vodaright> #vr2> span{
+    font-weight: bold;
+}
+#vodafone> #vodaright> #vr3{
+    color: #1264a3;
+    margin: 0;   
+}
+
+/* ----------- smalltext ----------- */
+#smalltext{
+    text-align: center;
+    font-size: .875rem;
+    color: #696969 !important;
+}
+
+/* ------------- cards -------------- */
+#cards{
+    width: 100%;
+    background-color: #f4ede4;
+    padding-bottom: 6rem;
+    box-sizing: border-box;
+}
+#cards> #cardsup{
+    /* background-color: brown; */
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding-top: 2rem;
+}
+#cards> #cardsup> h2{
+    font-size: 2rem;
+    font-weight: 600;
+}
+#cards> #cardsdown{
+    /* background-color:violet; */
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin: auto;
+    box-sizing: border-box;
+}
+#cards> #cardsdown> div{
+    padding: 0.5rem;
+    background-color: white;
+    transition: 0.5s;
+}
+#cards> #cardsdown> div:hover{
+    transform: scale(1.1);
+}
+#cards> #cardsdown> div>h2{
+    margin: 0;
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+#cards> #cardsdown> div>p{
+    margin: 0;
+    margin-top: 1rem;
+    font-size: .875rem;
+    color: #454245;
+}
+#cards> #cardsdown> div> .arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#cards> #cardsdown> div> .arrow> p,i{
+    font-size: .875rem;
+    /* font-size: 1rem; */
+    color: #1264a3;
+    font-weight: 500;
+}
+/* ------- c1 --------- */
+#cards> #cardsdown> div> #c1{
+    margin-top: 5.5rem;
+    margin-bottom: 0;
+}
+#cards> #cardsdown> div> #c1>p{
+    margin: 0;
+}
+/* -------- c2 --------- */
+#cards> #cardsdown> div> #c2{
+    margin-top: 3.5rem;
+    margin-bottom: 0;
+}
+#cards> #cardsdown> div> #c2>p{
+    margin: 0;
+}
+/* ------- c3 --------- */
+#cards> #cardsdown> div> #c3{
+    margin-top: 5.5rem;
+    margin-bottom: 0;
+}
+#cards> #cardsdown> div> #c3>p{
+    margin: 0;
+}
+/* ------- c4 --------- */
+#cards> #cardsdown> div> #c4{
+    margin-top: 5.5rem;
+    margin-bottom: 0;
+}
+#cards> #cardsdown> div> #c4>p{
+    margin: 0;
+}
+
+/* ----------------- round -------------- */
+#round{
+    /* width: 100%; */
+    background-color: #4a154b;
+    text-align: center;
+    clip-path: ellipse(75% 100% at center top);
+    /* height: auto; */
+    min-height: 350px;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 8;
+}
+#round> h2{
+    font-size: 3.125rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 2rem !important;
+    margin-top: 0;
+    padding-top: 5rem;
+}
+#round> button{
+    height: 60px;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 0.3rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+#round> #r1{
+    color: #611f69;
+}
+#round> #r2{
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+/* ------------ icons ------------- */
+#icons{
+    /* background-color: aqua; */
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content:space-between ;
+    align-items: center;
+}
+#iconsleft{
+    /* background-color: blanchedalmond; */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+#iconsleft:hover{
+    color: #1264a3;
+}
+#iconsleft> p>i{
+    color: black;
+}
+#iconsleft> i{
+    color: black;
+    font-size: 1rem;
+}
+#iconsright{
+    /* background-color: bisque; */
+    display: flex;
+    gap: 1.5rem;
+}
+#iconsright> i{
+    color: black;
+    font-size: 1.2rem;
+}
+#iconsright> i:hover{
+    color: #1264a3;
+}
+/* -------------- footer --------------- */
+footer{
+    /* background-color: aqua; */
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+footer> #footerleft{
+    /* background-color: palevioletred; */
+    width: 20%;
+    padding-top: 2rem;
+}
+footer> #footerright{
+    /* background-color: tomato; */
+    width: 80%;
+    display: flex;
+    gap: 1rem;
+}
+#footerright>ul>:nth-child(1){
+    font-weight: 600;
+}
+#footerright>#ul1 li:nth-child(9){
+    font-weight: 600;
+    margin-top: 1rem;
+}
+#footerright>ul>li
+{
+    font-size: 1rem;
+    list-style-type: none;
+    padding-top: 1rem;
+    color: #696969;
+}
+#footerright>ul>li:hover{
+    color: #1264a3;
+}
+#footerright>#ul1 li:nth-child(9){
+    color: black;
+}
+#footerright>ul>:nth-child(1){
+    color: black;
+}
+/* ------------------- cookie ------------------ */
+#cookie{
+    /* background-color: aqua; */
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    border-top:1px solid #edeaed;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    align-items: center;
+}
+#cookie>#cookieleft
+{
+    /* background-color: blueviolet; */
+}
+#cookie>#cookieleft> ul{
+    display: flex;
+    gap: 1rem;
+    justify-content: start;
+    padding-left: 0;
+}
+#cookie>#cookieleft> ul>li:first-child{
+    color:#1264a3;
+    font-weight: 700;
+}
+#cookie>#cookieleft> ul> li{
+    list-style-type: none;
+    color: #696969;
+    font-size: .875rem;
+}
+#cookieright{
+    /* background-color: tomato; */
+    text-align: end;
+}
+#cookieright> p{
+    color: #696969;
+    font-size: .875rem;
+    margin: 0;
+}
